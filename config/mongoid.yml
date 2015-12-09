@@ -18,7 +18,7 @@ development:
         read:
           mode: :nearest
           tag_sets:
-            - dc: ap-northeast-1a
+            - dc: <%= ENV["MONGO_READ_DC"] %>
 test:
   clients:
     default:
